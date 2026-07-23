@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ArchiveVerse - The Global Digital Archive Community. Premium curated content across movies, TV series, anime, concerts, and more.">
+  <title>ArchiveVerse - The Global Digital Archive Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.cn">
+  <link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin>
+  <link href="https://fonts.googleapis.cn/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">&#9670;</span>
+        <span class="logo-text">ArchiveVerse</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#showcase" class="nav-link">Showcase</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#membership" class="nav-link">Membership</a>
+        <a href="#about" class="nav-link">About</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Global Digital Archive</div>
+      <h1 class="hero-title reveal">
+        <span class="title-line">Archive</span><span class="title-line title-gold">Verse</span>
+      </h1>
+      <p class="hero-subtitle reveal">The Global Digital Archive Community</p>
+      <p class="hero-desc reveal">A curated universe of premium content spanning cinema, television, music, literature, and beyond &mdash; preserved for eternity.</p>
+      <div class="hero-actions reveal">
+        <a href="#categories" class="btn btn-primary">Explore Collections</a>
+        <a href="#membership" class="btn btn-outline">Become a Member</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- Technical Specs Showcase -->
+  <section id="techspecs" class="techspecs-section">
+    <div class="techspecs-container">
+      <div class="section-header reveal">
+        <span class="section-tag">Premium Quality</span>
+        <h2 class="section-title">Reference-Grade Standards</h2>
+        <p class="section-desc">Every title in our holdings meets the highest fidelity benchmarks</p>
+      </div>
+      <div class="techspecs-grid">
+        <!-- 4K UHD -->
+        <div class="techspec-card reveal reveal-delay-1">
+          <div class="techspec-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="4" y="8" width="32" height="22" rx="3" stroke="url(#g1)" stroke-width="1.5"/>
+              <rect x="10" y="12" width="20" height="14" rx="1" fill="url(#g1)" opacity="0.12"/>
+              <text x="20" y="22" text-anchor="middle" fill="url(#g1)" font-size="7" font-weight="700" font-family="Inter, sans-serif">4K</text>
+              <line x1="14" y1="34" x2="26" y2="34" stroke="url(#g1)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="20" y1="30" x2="20" y2="34" stroke="url(#g1)" stroke-width="1.5"/>
+              <defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#D4AF37"/><stop offset="1" stop-color="#F4E29A"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="techspec-title">4K UHD</h3>
+          <p class="techspec-desc">Native 3840x2160 resolution with HDR10+ and wide color gamut. Four times the detail of Full HD.</p>
+        </div>
+        <!-- Blu-ray ISO & REMUX -->
+        <div class="techspec-card reveal reveal-delay-2">
+          <div class="techspec-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="15" stroke="url(#g2)" stroke-width="1.5"/>
+              <circle cx="20" cy="20" r="5" stroke="url(#g2)" stroke-width="1"/>
+              <circle cx="20" cy="20" r="1.5" fill="url(#g2)"/>
+              <path d="M10 10 A14 14 0 0 1 30 10" stroke="url(#g2)" stroke-width="0.8" fill="none" opacity="0.4"/>
+              <path d="M10 30 A14 14 0 0 1 30 30" stroke="url(#g2)" stroke-width="0.8" fill="none" opacity="0.4"/>
+              <path d="M8 16 L12 16" stroke="url(#g2)" stroke-width="0.6" opacity="0.3"/>
+              <path d="M8 20 L14 20" stroke="url(#g2)" stroke-width="0.6" opacity="0.3"/>
+              <path d="M8 24 L11 24" stroke="url(#g2)" stroke-width="0.6" opacity="0.3"/>
+              <defs><linearGradient id="g2" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#D4AF37"/><stop offset="1" stop-color="#F4E29A"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="techspec-title">Blu-ray ISO &amp; REMUX</h3>
+          <p class="techspec-desc">Full disc images and lossless remuxes preserved at original bitrate. Complete menus, extras, and commentary tracks.</p>
+        </div>
+        <!-- Dolby Vision -->
+        <div class="techspec-card reveal reveal-delay-3">
+          <div class="techspec-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="5" y="9" width="30" height="20" rx="2" stroke="url(#g3)" stroke-width="1.5"/>
+              <rect x="9" y="13" width="22" height="12" rx="1" fill="url(#g3)" opacity="0.1"/>
+              <path d="M13 19 L17 15 L21 21 L25 17 L29 22" stroke="url(#g3)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="13" cy="16" r="1.5" fill="url(#g3)" opacity="0.6"/>
+              <line x1="14" y1="33" x2="26" y2="33" stroke="url(#g3)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="20" y1="29" x2="20" y2="33" stroke="url(#g3)" stroke-width="1.2"/>
+              <defs><linearGradient id="g3" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#D4AF37"/><stop offset="1" stop-color="#F4E29A"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="techspec-title">Dolby Vision</h3>
+          <p class="techspec-desc">Dynamic metadata HDR with scene-by-scene optimization. 12-bit color depth delivering over 68 billion colors.</p>
+        </div>
+        <!-- Dolby Atmos -->
+        <div class="techspec-card reveal reveal-delay-4">
+          <div class="techspec-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="22" r="4" fill="url(#g4)" opacity="0.8"/>
+              <path d="M10 16 Q8 22 10 28" stroke="url(#g4)" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+              <path d="M30 16 Q32 22 30 28" stroke="url(#g4)" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+              <path d="M6 12 Q3 22 6 32" stroke="url(#g4)" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.4"/>
+              <path d="M34 12 Q37 22 34 32" stroke="url(#g4)" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.4"/>
+              <path d="M14 18 Q12 22 14 26" stroke="url(#g4)" stroke-width="1.1" stroke-linecap="round" fill="none" opacity="0.6"/>
+              <path d="M26 18 Q28 22 26 26" stroke="url(#g4)" stroke-width="1.1" stroke-linecap="round" fill="none" opacity="0.6"/>
+              <defs><linearGradient id="g4" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#D4AF37"/><stop offset="1" stop-color="#F4E29A"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="techspec-title">Dolby Atmos</h3>
+          <p class="techspec-desc">Object-based immersive audio with height channels. Sound flows around and above you in a true 3D soundscape.</p>
+        </div>
+        <!-- Hi-Res Lossless Audio -->
+        <div class="techspec-card reveal reveal-delay-5">
+          <div class="techspec-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M6 28 L6 18 L10 18 L10 28Z" fill="url(#g5)" opacity="0.5"/>
+              <path d="M12 28 L12 14 L16 14 L16 28Z" fill="url(#g5)" opacity="0.65"/>
+              <path d="M18 28 L18 10 L22 10 L22 28Z" fill="url(#g5)" opacity="0.8"/>
+              <path d="M24 28 L24 6 L28 6 L28 28Z" fill="url(#g5)"/>
+              <path d="M30 28 L30 12 L34 12 L34 28Z" fill="url(#g5)" opacity="0.65"/>
+              <line x1="4" y1="28" x2="36" y2="28" stroke="url(#g5)" stroke-width="1" opacity="0.3"/>
+              <defs><linearGradient id="g5" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#D4AF37"/><stop offset="1" stop-color="#F4E29A"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="techspec-title">Hi-Res Lossless Audio</h3>
+          <p class="techspec-desc">Up to 192kHz/24bit studio-grade audio. FLAC, DSD, and master tape recordings for audiophile-level fidelity.</p>
+        </div>
+        <!-- NAS Media Server -->
+        <div class="techspec-card reveal reveal-delay-6">
+          <div class="techspec-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="8" y="6" width="24" height="8" rx="2" stroke="url(#g6)" stroke-width="1.5"/>
+              <rect x="8" y="16" width="24" height="8" rx="2" stroke="url(#g6)" stroke-width="1.5"/>
+              <rect x="8" y="26" width="24" height="8" rx="2" stroke="url(#g6)" stroke-width="1.5"/>
+              <circle cx="28" cy="10" r="1.5" fill="url(#g6)"/>
+              <circle cx="28" cy="20" r="1.5" fill="url(#g6)"/>
+              <circle cx="28" cy="30" r="1.5" fill="url(#g6)"/>
+              <line x1="12" y1="10" x2="22" y2="10" stroke="url(#g6)" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+              <line x1="12" y1="20" x2="22" y2="20" stroke="url(#g6)" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+              <line x1="12" y1="30" x2="22" y2="30" stroke="url(#g6)" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+              <defs><linearGradient id="g6" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#D4AF37"/><stop offset="1" stop-color="#F4E29A"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="techspec-title">NAS Media Server</h3>
+          <p class="techspec-desc">Enterprise-grade NAS with PB-scale storage. Organized library with metadata, subtitles, and multi-device streaming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content (hidden on sub-pages) -->
+  <div id="mainContent">
+  <!-- Featured Showcase -->
+  <section id="showcase" class="showcase-section">
+    <div class="section-header reveal">
+      <span class="section-tag">Featured</span>
+      <h2 class="section-title">Curated Showcase</h2>
+      <p class="section-desc">Five signature collections from our permanent holdings</p>
+    </div>
+    <div class="showcase-wrapper">
+      <div class="showcase-track" id="showcaseTrack">
+        <!-- Slide 1: Global Box Office Top 100 -->
+        <div class="showcase-slide slide-cinematic" data-slide="0">
+          <div class="slide-bg-poster" style="background-image:url('https://image.tmdb.org/t/p/w500/jRXYjXNkEMIWfjg3XJkBAz3GYgR.jpg')"></div>
+          <div class="slide-bg-overlay"></div>
+          <div class="slide-cinematic-inner">
+            <div class="slide-cinematic-left">
+              <span class="slide-collection-tag">Collection 01</span>
+              <h2 class="slide-cinematic-title">GLOBAL BOX OFFICE<br>TOP 100</h2>
+            </div>
+            <div class="slide-cinematic-right">
+              <div class="slide-poster-frame">
+                <img src="https://image.tmdb.org/t/p/w500/jRXYjXNkEMIWfjg3XJkBAz3GYgR.jpg" alt="Avatar" class="slide-poster-img" loading="lazy">
+                <div class="slide-poster-glow"></div>
+              </div>
+            </div>
+            <div class="slide-cinematic-bottom">
+              <button class="btn btn-primary" onclick="event.preventDefault(); navigateTo('boxoffice')">Enter</button>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2: Douban Top 100 Blu-ray -->
+        <div class="showcase-slide slide-cinematic" data-slide="1">
+          <div class="slide-bg-poster" style="background-image:url('https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg')"></div>
+          <div class="slide-bg-overlay"></div>
+          <div class="slide-cinematic-inner">
+            <div class="slide-cinematic-left">
+              <span class="slide-collection-tag">Collection 02</span>
+              <h2 class="slide-cinematic-title">DOUBAN TOP 100<br>BLU-RAY</h2>
+            </div>
+            <div class="slide-cinematic-right">
+              <div class="slide-poster-frame">
+                <img src="https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg" alt="The Shawshank Redemption" class="slide-poster-img" loading="lazy">
+                <div class="slide-poster-glow"></div>
+              </div>
+            </div>
+            <div class="slide-cinematic-bottom">
+              <button class="btn btn-primary" onclick="event.preventDefault(); navigateTo('douban')">Enter</button>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3: Academy Award Best Pictures -->
+        <div class="showcase-slide slide-cinematic" data-slide="2">
+          <div class="slide-bg-poster" style="background-image:url('https://image.tmdb.org/t/p/w500/8Gxv80sTCOUZ9i4tyrBhJq2MNzm.jpg')"></div>
+          <div class="slide-bg-overlay"></div>
+          <div class="slide-cinematic-inner">
+            <div class="slide-cinematic-left">
+              <span class="slide-collection-tag">Collection 03</span>
+              <h2 class="slide-cinematic-title">ACADEMY AWARD<br>BEST PICTURES</h2>
+            </div>
+            <div class="slide-cinematic-right">
+              <div class="slide-poster-frame">
+                <img src="https://image.tmdb.org/t/p/w500/8Gxv80sTCOUZ9i4tyrBhJq2MNzm.jpg" alt="Oppenheimer" class="slide-poster-img" loading="lazy">
+                <div class="slide-poster-glow"></div>
+              </div>
+            </div>
+            <div class="slide-cinematic-bottom">
+              <button class="btn btn-primary" onclick="event.preventDefault(); navigateTo('oscar')">Enter</button>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4: Western TV Series -->
+        <div class="showcase-slide slide-cinematic" data-slide="3">
+          <div class="slide-bg-poster" style="background-image:url('https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg')"></div>
+          <div class="slide-bg-overlay"></div>
+          <div class="slide-cinematic-inner">
+            <div class="slide-cinematic-left">
+              <span class="slide-collection-tag">Collection 04</span>
+              <h2 class="slide-cinematic-title">WESTERN<br>TV SERIES</h2>
+            </div>
+            <div class="slide-cinematic-right">
+              <div class="slide-poster-frame">
+                <img src="https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg" alt="Game of Thrones" class="slide-poster-img" loading="lazy">
+                <div class="slide-poster-glow"></div>
+              </div>
+            </div>
+            <div class="slide-cinematic-bottom">
+              <button class="btn btn-primary" onclick="event.preventDefault(); navigateTo('tvseries')">Enter</button>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 5: Must-Watch Anime -->
+        <div class="showcase-slide slide-cinematic" data-slide="4">
+          <div class="slide-bg-poster" style="background-image:url('https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg')"></div>
+          <div class="slide-bg-overlay"></div>
+          <div class="slide-cinematic-inner">
+            <div class="slide-cinematic-left">
+              <span class="slide-collection-tag">Collection 05</span>
+              <h2 class="slide-cinematic-title">MUST-WATCH<br>ANIME</h2>
+            </div>
+            <div class="slide-cinematic-right">
+              <div class="slide-poster-frame">
+                <img src="https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="Spirited Away" class="slide-poster-img" loading="lazy">
+                <div class="slide-poster-glow"></div>
+              </div>
+            </div>
+            <div class="slide-cinematic-bottom">
+              <button class="btn btn-primary" onclick="event.preventDefault(); navigateTo('anime')">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Grid -->
+  <section id="categories" class="categories-section">
+    <div class="section-header reveal">
+      <span class="section-tag">Universe</span>
+      <h2 class="section-title">Explore Our Realm</h2>
+      <p class="section-desc">Nine domains of premium content, each meticulously curated</p>
+    </div>
+    <div class="category-grid" id="categoryGrid">
+      <!-- Cards generated by JS -->
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section id="membership" class="membership-section">
+    <div class="section-header reveal">
+      <span class="section-tag">Exclusive</span>
+      <h2 class="section-title">Founding Membership</h2>
+      <p class="section-desc">Join the inner circle and gain access to the complete vault</p>
+    </div>
+    <div class="membership-card reveal">
+      <div class="membership-glow"></div>
+      <div class="membership-inner">
+        <div class="membership-badge">Founding Member</div>
+        <div class="membership-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount">99</span>
+        </div>
+        <p class="membership-renewal">+ $9.9 / year renewal</p>
+        <ul class="membership-benefits">
+          <li><span class="check">&#10003;</span> Full access to all 9 category holdings</li>
+          <li><span class="check">&#10003;</span> Priority access to new additions</li>
+          <li><span class="check">&#10003;</span> Direct contact for original file transfer</li>
+          <li><span class="check">&#10003;</span> Exclusive member-only content drops</li>
+          <li><span class="check">&#10003;</span> Community channel access</li>
+          <li><span class="check">&#10003;</span> Founding member badge &amp; recognition</li>
+        </ul>
+        <button class="btn btn-primary btn-full" onclick="handleWhatsApp()">Join Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-text reveal">
+        <span class="section-tag">About</span>
+        <h2 class="section-title">Our Mission</h2>
+        <p>ArchiveVerse is a global community dedicated to the preservation and curation of digital media. We believe that great content deserves to be preserved in its original quality, accessible to those who value it.</p>
+        <p>Our team of curators meticulously selects, verifies, and maintains every item in our holdings, ensuring the highest standards of quality and completeness.</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-item">
+          <span class="stat-number" data-target="4800">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Community Members</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="52000">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Curated Titles</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3.8">0</span><span class="stat-suffix"> PB</span>
+          <span class="stat-label">Total Holdings</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="9">0</span>
+          <span class="stat-label">Content Domains</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer-section">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-icon">&#9670;</span>
+        <span class="logo-text">ArchiveVerse</span>
+        <p class="footer-tagline">The Global Digital Archive Community</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Reach out via WhatsApp to obtain original files or inquire about membership.</p>
+        <button class="btn btn-primary" onclick="handleWhatsApp()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Contact via WhatsApp
+        </button>
+        <div class="whatsapp-steps">
+          <div class="step"><span class="step-num">1</span> Copy number</div>
+          <div class="step-arrow">&rarr;</div>
+          <div class="step"><span class="step-num">2</span> Center popup</div>
+          <div class="step-arrow">&rarr;</div>
+          <div class="step"><span class="step-num">3</span> Redirect to chat</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#hero">Home</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#categories">Categories</a>
+        <a href="#membership">Membership</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="disclaimer">ArchiveVerse is a curated digital preservation community. All content is maintained for archival and educational purposes. Contact us for legitimate access to original files.</p>
+      <p class="copyright">&copy; 2024 ArchiveVerse. All rights reserved.</p>
+    </div>
+  </footer>
+  </div><!-- end mainContent -->
+
+  <!-- SPA List Page Container -->
+  <div id="listPage" class="spa-page" style="display:none;"></div>
+
+  <!-- SPA Detail Page Container -->
+  <div id="detailPage" class="spa-page" style="display:none;"></div>
+
+  <!-- Category Detail Overlay -->
+  <div id="categoryOverlay" class="category-overlay" aria-hidden="true">
+    <div class="overlay-backdrop" onclick="closeCategoryOverlay()"></div>
+    <div class="overlay-panel">
+      <div class="overlay-header">
+        <div class="overlay-header-left">
+          <span class="overlay-icon" id="overlayIcon"></span>
+          <div>
+            <h2 class="overlay-title" id="overlayTitle"></h2>
+            <p class="overlay-subtitle" id="overlaySubtitle"></p>
+          </div>
+        </div>
+        <button class="overlay-close" onclick="closeCategoryOverlay()" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="overlay-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="overlaySearch" placeholder="Search within this domain..." oninput="filterCategoryItems()">
+      </div>
+      <div class="overlay-tabs" id="overlayTabs"></div>
+      <div class="overlay-content" id="overlayContent"></div>
+    </div>
+  </div>
+
+  <!-- Resource Detail Modal -->
+  <div id="resourceModal" class="resource-modal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeResourceModal()"></div>
+    <div class="modal-panel">
+      <button class="modal-close" onclick="closeResourceModal()" aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-hero" id="modalHero">
+        <div class="modal-hero-overlay"></div>
+        <div class="modal-hero-content">
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <div class="modal-meta" id="modalMeta"></div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-tags" id="modalTags"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-info-grid" id="modalInfoGrid"></div>
+        <button class="btn btn-primary btn-full" onclick="handleWhatsApp()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Contact to Obtain Original Files
+        </button>
+        <div class="modal-related" id="modalRelated">
+          <h4>Related Holdings</h4>
+          <div class="related-grid" id="relatedGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Popup -->
+  <div id="whatsappPopup" class="whatsapp-popup" aria-hidden="true">
+    <div class="popup-content">
+      <div class="popup-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </div>
+      <h3>Contact via WhatsApp</h3>
+      <p class="popup-number" id="popupNumber">+86 18902065009</p>
+      <p class="popup-hint">Number copied to clipboard. Redirecting to WhatsApp...</p>
+      <div class="popup-actions">
+        <button class="btn btn-primary" onclick="redirectToWhatsApp()">Open WhatsApp</button>
+        <button class="btn btn-outline" onclick="closeWhatsAppPopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts/data-boxoffice.js"></script>
+  <script src="/scripts/data-douban.js"></script>
+  <script src="/scripts/data-oscar.js"></script>
+  <script src="/scripts/data-tvseries.js"></script>
+  <script src="/scripts/data-anime.js"></script>
+  <script src="/scripts/data-directory.js"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
