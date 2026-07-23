@@ -265,7 +265,7 @@ function renderDetailPage(collectionId, itemId) {
           </div>
           <p class="detail-desc">${desc}</p>
           <div class="detail-actions">
-            <button class="btn btn-primary" onclick="handleWhatsApp()">Contact to Obtain Original Files</button>
+            <button class="btn btn-primary" onclick="handleWhatsApp()">Join Now</button>
           </div>
         </div>
       </div>
