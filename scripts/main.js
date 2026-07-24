@@ -20,7 +20,7 @@ const collectionsData = [
   {
     id: 'boxoffice',
     name: 'GLOBAL BOX OFFICE TOP 100',
-    poster: 'https://image.tmdb.org/t/p/w500/jRXYjXNkEMIWfjg3XJkBAz3GYgR.jpg',
+    poster: './avatar_2009.jpg',
     desc: 'The highest-grossing films in cinema history, preserved in pristine 4K UHD and Blu-ray quality.'
   },
   {
@@ -32,7 +32,7 @@ const collectionsData = [
   {
     id: 'oscar',
     name: 'ACADEMY AWARD BEST PICTURES',
-    poster: 'https://image.tmdb.org/t/p/w500/8Gxv80sTCOUZ9i4tyrBhJq2MNzm.jpg',
+    poster: './ meiju.jpg',
     desc: 'Every Best Picture winner in Academy history, from Wings (1927) to Oppenheimer (2023), in reference-grade quality.'
   },
   {
