@@ -19,11 +19,10 @@ const categoriesData = [
 const collectionsData = [
   {
     id: 'boxoffice',
-    name: 'GLOBAL BOX OFFICE TOP 100',
-    poster: './avatar_2009.jpg',
+    name: 'GLOBAL BOX OFFICE TOP 10',
+    poster: 'https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg',
     desc: 'The highest-grossing films in cinema history, preserved in pristine 4K UHD and Blu-ray quality.'
-  },
-  {
+  },  {
     id: 'douban',
     name: 'DOUBAN TOP 100 BLU-RAY',
     poster: 'https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg',
@@ -32,7 +31,7 @@ const collectionsData = [
   {
     id: 'oscar',
     name: 'ACADEMY AWARD BEST PICTURES',
-    poster: './ meiju.jpg',
+    poster:  'shturl.cc/OdUohWQTZmUiDdnkzsgI2hCLsUU7TND7e4PpAjCFmhhs4VoOmeMzQ',
     desc: 'Every Best Picture winner in Academy history, from Wings (1927) to Oppenheimer (2023), in reference-grade quality.'
   },
   {
