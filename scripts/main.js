@@ -1,4 +1,4 @@
-/* ============================================
+﻿/* ============================================
    ArchiveVerse - Main JavaScript
    ============================================ */
 
@@ -107,8 +107,17 @@ function router() {
   mainContent.style.display = 'none';
   listPage.style.display = 'none';
   detailPage.style.display = 'none';
-  targetEl.style.display = 'block';
-  window.scrollTo({ top: 0, behavior: 'instant' });
+ // 仅填写独立内容页面ID，导航、菜单、按钮ID不要写在这里
+const pageIds = ['hero','techspecs','mainContent','listPage','detailPage'];
+pageIds.forEach(id => {
+  const dom = document.getElementById(id);
+  // 只隐藏其他页面，当前目标页面保留显示
+  if (dom && dom !== targetEl) {
+    dom.style.display = 'none';
+  }
+})
+targetEl.style.display = 'block';
+window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
 function navigateTo(collectionId) {
@@ -785,3 +794,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('hashchange', router);
   router();
 });
+window.addEventListener('DOMContentLoaded',()=>{
+  const home = document.getElementById('hero');
+  if(home) home.style.display = 'block';
+})
